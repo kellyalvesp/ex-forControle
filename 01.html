@@ -1,0 +1,17 @@
+<script>
+    //problema 
+    //Faça um programa que peça para o aluno informar a quantidade de notas que obteve, em seguida usando for com variavel de controle, peça para ele informar as notas, some todas as notas e calcule a media
+    //ENTRADA 
+    let quantidade = Number(prompt(`Informe qunatas notas você obteve:`));
+
+    //PROCESSAMENTO
+    let soma = 0;
+    for (let nota = 1; nota <= quantidade; nota++) {
+        const notas = Number(prompt(`Qual foi a nota da sua ${nota}?`));
+        soma = soma + notas;
+    }
+    let media = soma / quantidade;
+
+    //SAIDA
+    document.write(`A somade todas as suas notas fica ${soma.toFixed(2).replace(".", ",")}`);
+</script>
